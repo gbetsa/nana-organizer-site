@@ -1,0 +1,122 @@
+.form_container {
+    width: 90%;
+    background-color: var(--white-primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form_container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: .5rem;
+    padding: 2rem 1rem;
+}
+
+.form_container form input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--black-primary-color);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-secondary-color);
+}
+
+.checkboxs input{
+    width: auto ! important;
+    margin-right: 0.5rem;
+}
+
+.checkboxs label{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--gray-secondary-color);
+}
+
+.form_container form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--black-primary-color);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-secondary-color);
+}
+
+.form_container form select {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--black-primary-color);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-secondary-color);
+}
+
+.form_container form option {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(---primary-color);
+}
+
+.form_container form button {
+    width: 60%;
+    padding: .6rem 2rem;
+    border: 1px solid var(--gold-color);
+    /* Primeira borda */
+    background-color: var(--gold-color);
+    color: var(--white-primary-color);
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.form_container form button::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid var(--gold-color);
+    /* Segunda borda */
+}
+
+.form_container form button:hover {
+    background-color: var(--white-primary-color);
+    color: var(--gold-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .form_container {
+        width: 60%;
+    }
+
+    .form_container form {
+        gap: .3rem;
+        padding: 1rem 2rem;
+    }
+
+    .form_container form button{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .form_container form {
+        gap: 1rem;
+        padding: 2rem 3rem;
+    }
+}

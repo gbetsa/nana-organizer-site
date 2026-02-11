@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/logo-aba.ico">
+  <link rel="icon" type="image/png+xml" href="./assets/logo-aba.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Organizer | Nana Bernardo</title>
+  <meta name="description"
+    content="Conheça Nana Bernardo, especialista em organização de ambientes. Transforme seu espaço com a experiência e dedicação de uma personal organizer.">
+  <!-- Carregar fontes de maneira eficiente -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    as="style">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap">
+  <!-- Pré-carregar os ícones -->
+  <link rel="preload" href="./assets/logo-aba.ico" as="image">
+  <link rel="preload" href="./assets/logo-aba.png" as="image">
+  <script src="/colors.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-328670037"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-328670037');
+  </script>
+
+  <!-- Event snippet for Contato conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-328670037/_yvICN6Js6AbENW23JwB',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+  <!-- Event snippet for Clique no Botão para Envio de Formulário conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-328670037/mXFTCI60xYgYENW23JwB',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Adiar o carregamento do JS -->
+  <script type="module" src="/src/main.jsx" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.scrollToTop {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    /* Ajuste para não sobrepor o botão do WhatsApp */
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: var(--white-primary-color);
+    background-color: var(--gold-color);
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 12px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 3.8rem;
+    height: 3.8rem;
+}
+
+.scrollToTop:hover {
+    transform: scale(1.1);
+}
+
+.scrollToTop.visible {
+    display: flex;
+    /* Exibe o botão quando a classe "visible" for aplicada */
+}

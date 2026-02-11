@@ -1,0 +1,17 @@
+.quemSou_container{
+    padding: 5% 0;
+}
+
+/* Notebooks e desktops pequenos (a partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    .quemSou_container{
+        padding: 4% 0 0 0;
+    }
+}
+
+/* Monitores 2K e superiores (a partir de 1920px) */
+@media screen and (min-width: 1920px) {
+    .quemSou_container{
+        padding: 3% 0 0 0;
+    }
+}

@@ -1,0 +1,124 @@
+.sobre_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0 0 0;
+}
+
+.sectionOne{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 5%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-primary-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+    
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card h4{
+    font-size: 20px;
+    color: var(--black-primary-color);
+    border-bottom: 2px solid var(--gold-color);
+    text-align: start;
+    width: 25%;
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 16px;
+    color: var(--blck-primary-color);
+}
+
+.card span{
+    color: var(--gold-color);
+}
+
+.sectionTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5% 5%;
+    background-color: var(--gray-primary-color);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.sectionTwo h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black-primary-color);
+    text-align: center;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.swiper_container{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--white-primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.line{
+    width: 100%;
+    height: 30px;
+    background-color: var(--gold-color);
+    border-radius: 5px 5px 0 0;
+}
+
+/* Notebooks e desktops pequenos (a partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    .sectionOne{
+        flex-direction: row;
+        padding: 10% 5% 0 5%;
+    }
+
+    .card h4{
+        width: 14%;
+        font-size: 18px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
+    .sectionTwo{
+        padding: 3% 5% 5% 5%;;
+    }
+
+    .sectionTwo h3{
+        font-size: 24px;
+        align-self: center;
+    }
+}
+
+/* Monitores 2K e superiores (a partir de 1920px) */
+@media screen and (min-width: 1920px) {
+    .sectionOne{
+        padding: 8% 5% 0 5%;
+        gap: 2rem;
+    }
+
+    .sectionTwo h3{
+        font-size: 30px;
+    }
+}

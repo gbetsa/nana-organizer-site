@@ -1,0 +1,16 @@
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: var(--gold-color);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 22px !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--gold-color);
+}

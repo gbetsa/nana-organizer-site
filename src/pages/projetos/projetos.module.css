@@ -1,0 +1,144 @@
+.projetos_container{
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+
+}
+
+.projetos_container h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black-primary-color);
+    border-bottom: 2px solid var(--gold-color);
+    align-self: center;
+}
+
+.swiper_container{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sectionOne, .sectionTwo, .sectionThree{
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sectionTwo{
+    background-color: var(--gray-primary-color);
+}
+
+.swiper_container p{
+    font-size: 20px;
+    width: 50%;
+    text-align: start;
+    border-bottom: 2px solid var(--gold-color);
+    padding-bottom: 0.1rem;
+}
+
+.swiper_container span{
+    font-size: 16px;
+    color: var(--black-primary-color);
+}
+
+.sapateira{
+    width: 30% !important;
+}
+
+.baby{
+    width: 55% !important;
+}
+
+.banheiro{
+    width: 75% !important;
+}
+
+.rouparia{
+    width: 30% !important;
+}
+
+/* Notebooks e desktops pequenos (a partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    .projetos_container {
+        padding: 9% 0 0 0;
+        gap: 0;
+    }
+
+    .swiper_slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sectionOne, .sectionTwo, .sectionThree{
+        padding: 3% 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .swiper_container p{
+        font-size: 16px;
+        width: 25%;
+    }
+
+    .swiper_container span{
+        font-size: 14px;
+    }
+
+    .sapateira{
+        width: 15% !important;
+    }
+    
+    .baby{
+        width: 30% !important;
+    }
+    
+    .banheiro{
+        width: 40% !important;
+    }
+    
+    .rouparia{
+        width: 15% !important;
+    }
+}
+
+/* Monitores 2K e superiores (a partir de 1920px) */
+@media screen and (min-width: 1920px) {
+    .projetos_container {
+        padding: 8% 0 0 0;
+        gap: 0;
+    }
+
+    .projetos_container h3{
+        font-size: 30px;
+    }
+
+    .swiper_container p{
+        width: 17%;
+    }
+
+    .sapateira{
+        width: 10% !important;
+    }
+    
+    .baby{
+        width: 20% !important;
+    }
+    
+    .banheiro{
+        width: 25% !important;
+    }
+    
+    .rouparia{
+        width: 10% !important;
+    }
+}

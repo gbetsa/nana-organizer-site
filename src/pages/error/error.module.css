@@ -1,0 +1,86 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 5%;
+  }
+  
+  .errorBox {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .errorNumber{
+    font-size: 100px;
+    font-weight: 600;
+    color: var(--gold-color);
+  }
+  
+  .errorText {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .organizing {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  .item {
+    width: 60px;
+    height: 60px;
+    background-color: var(--gold-color);
+    border-radius: 8px;
+    opacity: 0;
+    animation: itemReorganize 3s ease-out forwards;
+  }
+  
+  .item1 {
+    animation-delay: 0s;
+  }
+  
+  .item2 {
+    animation-delay: 0.5s;
+  }
+  
+  .item3 {
+    animation-delay: 1s;
+  }
+  
+  .item4 {
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes itemReorganize {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    50% {
+      opacity: 0.7;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .errorContainer {
+      height: 100vh;
+    }
+  }
+  
