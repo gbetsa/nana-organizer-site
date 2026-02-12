@@ -1,6 +1,8 @@
 # Nana Bernardo - Personal Organizer
 
 Este é o repositório oficial do site da Nana Bernardo, especialista em organização de ambientes (Personal Organizer). O projeto é uma aplicação web moderna desenvolvida para apresentar os serviços de Nana, seu portfólio de projetos e oferecer canais diretos de contato com os clientes.
+---
+Site: https://www.nanaorganizer.com.br/
 
 ## 🚀 Tecnologias Utilizadas
 
